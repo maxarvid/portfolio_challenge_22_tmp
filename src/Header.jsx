@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu, Segment } from "semantic-ui-react";
-import { NavLink, Link } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
           as={NavLink}
           to={{ pathname: "/about" }}
         />
-      <Menu.Item
+        <Menu.Item
           id="projects-tab"
           name="my portfolio"
           as={NavLink}

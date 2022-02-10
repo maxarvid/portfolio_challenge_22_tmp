@@ -1,7 +1,5 @@
-// src/Footer.jsx
-
 import React from "react";
-import { Container } from "semantic-ui-react";
+import { Container } from "semantic-ui-react"
 
 const Footer = () => {
   return (

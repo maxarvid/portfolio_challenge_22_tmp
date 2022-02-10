@@ -1,15 +1,13 @@
-// cypress/integration/userCanNavigateThroughTheApplication.feature.js
-
 describe("User can navigate the app", () => {
-  beforeEach(() => {
+  before(() => {
     cy.visit("http://localhost:3000");
   });
 
   describe("to About tab and it", () => {
-    beforeEach(() => {
+    before(() => {
       cy.get("#about-tab").click();
     });
-    
+
     it("displays About Me header", () => {
       cy.get("#about-header").should("contain", "About Me");
     });
@@ -18,17 +16,17 @@ describe("User can navigate the app", () => {
       cy.url().should("contain", "about");
     });
 
-    it("does not display My Projects header ", () => {
-      cy.get("#projects-header").should("not-exist");
+    it("does not display My Projects header", () => {
+      cy.get("#project-header").should("not.exist");
     });
 
-    it("does not display Hello world", () => {
+    it("does not display Hello World", () => {
       cy.get("#hello").should("not.exist");
     });
   });
 
   describe("to My Projects tab and it", () => {
-    beforeEach(() => {
+    before(() => {
       cy.get("#projects-tab").click();
     });
 
@@ -40,18 +38,17 @@ describe("User can navigate the app", () => {
       cy.url().should("contain", "projects");
     });
 
-    it("does not display About Me header ", () => {
+    it("does not display About Me header", () => {
       cy.get("#about-header").should("not.exist");
     });
 
-    it("does not display Hello world", () => {
+    it("does not display Hello World", () => {
       cy.get("#hello").should("not.exist");
     });
   });
 
   describe("back to My Portfolio/Hello tab and it", () => {
-    beforeEach(() => {
-      cy.get("#about-tab").click();
+    before(() => {
       cy.get("#header").click();
     });
 
@@ -60,10 +57,10 @@ describe("User can navigate the app", () => {
     });
 
     it("displays correct url", () => {
-      cy.url().should("not.contain", "projects").and("not-contain", "about");
+      cy.url().should("not.contain", "projects").should("not.contain", "about");
     });
 
-    it("does not display About Me header ", () => {
+    it("does not display About Me header", () => {
       cy.get("#about-header").should("not.exist");
     });
 
