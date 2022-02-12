@@ -15,10 +15,10 @@ describe("User can see list of projects", () => {
   it("displays the second project", () => {
     cy.get("#project-2").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "FizzBuzz");
+      cy.get(".header").should("contain", "UI Design");
       cy.get(".description").should(
         "contain",
-        "Making ruby backend application is fun."
+        "Designing user interfaces is fun. I want to learn more about that..."
       );
     });
   });
