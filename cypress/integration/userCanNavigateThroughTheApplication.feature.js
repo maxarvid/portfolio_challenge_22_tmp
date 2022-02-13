@@ -20,7 +20,7 @@ describe("User can navigate the app", () => {
       cy.get("#project-header").should("not.exist");
     });
 
-    it("does not display Hello World", () => {
+    it("does not display Welcome!", () => {
       cy.get("#hello").should("not.exist");
     });
   });
@@ -42,7 +42,7 @@ describe("User can navigate the app", () => {
       cy.get("#about-header").should("not.exist");
     });
 
-    it("does not display Hello World", () => {
+    it("does not display Welcome!", () => {
       cy.get("#hello").should("not.exist");
     });
   });
@@ -52,8 +52,8 @@ describe("User can navigate the app", () => {
       cy.get("#header").click();
     });
 
-    it("displays Hello World", () => {
-      cy.get("#hello").should("contain", "Hello");
+    it("displays Welcome!", () => {
+      cy.get("#hello").should("contain", "Welcome!");
     });
 
     it("displays correct url", () => {
