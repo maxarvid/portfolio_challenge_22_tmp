@@ -15,10 +15,10 @@ describe("User can see list of projects", () => {
   it("displays the second project", () => {
     cy.get("#project-2").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "UI Design");
+      cy.get(".header").should("contain", "FizzBuzz");
       cy.get(".description").should(
         "contain",
-        "Designing user interfaces is fun. I want to learn more about that..."
+        "FizzBuzz is a very simple programming task, used in software developer job interviews, to determine whether the job candidate can actually write code."
       );
     });
   });
@@ -26,10 +26,10 @@ describe("User can see list of projects", () => {
   it("displays the third project", () => {
     cy.get("#project-3").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "Mobile UX");
+      cy.get(".header").should("contain", "ATM Challenge");
       cy.get(".description").should(
         "contain",
-        "I like to design for the mobile platform."
+        "We created a test account for an ATM with details and functions."
       );
     });
   });

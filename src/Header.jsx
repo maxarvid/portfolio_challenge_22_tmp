@@ -20,9 +20,15 @@ const Header = () => {
         />
         <Menu.Item
           id="projects-tab"
-          name="my portfolio"
+          name="my projects"
           as={NavLink}
           to={{ pathname: "/projects" }}
+        />
+        <Menu.Item
+          id="cv-tab"
+          name="my CV"
+          as={NavLink}
+          to={{ pathname: "/cv" }}
         />
       </Menu>
     </Segment>
