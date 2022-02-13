@@ -7,14 +7,14 @@
   },
   {
     "id": 2,
-    "name": "UI Design",
+    "name": "FizzBuzz",
     "image": "http://freelancewebdesigner.it/wp-content/uploads/2016/06/ux-designer.jpg",
-    "description": "Designing user interfaces is fun. I want to learn more about that..."
+    "description": "FizzBuzz is a very simple programming task, used in software developer job interviews, to determine whether the job candidate can actually write code."
   },
   {
     "id": 3,
-    "name": "Mobile UX",
+    "name": "Atm Challenge",
     "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4304976606523.5d89edcbad58e.jpg",
-    "description": "I like to design for the mobile platform. The challenges to build UI's for smartphones is challenging but extremely rewarding."
+    "description": "We created a test account for an ATM with details and functions."
   }
 ]
