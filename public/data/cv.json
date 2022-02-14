@@ -1,0 +1,17 @@
+{
+  "name": "Roberto Maisto",
+  "label": "Junior Developer",
+  "email": "maisto_roberto@hotmail.it",
+  "work": [
+    {
+      "name": "Synlab CAM Polidiagnostico",
+      "position": "Graphic designer",
+      "summary": "Use the Adobe package..."
+    },
+    {
+      "name": "FAO",
+      "position": "Coordination Officer",
+      "summary": "Going to UN lunches..."
+    }
+  ]
+}

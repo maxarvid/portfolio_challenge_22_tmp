@@ -14,7 +14,7 @@ describe("User can see experience", () => {
 
      it("displays previous work experience", () => {
         cy.get("#work").within(() => {
-            cy.get(".name").should("contain", "Synlab CAM Polidiagnostico ");
+            cy.get(".name").should("contain", "Synlab CAM Polidiagnostico");
             cy.get(".position").should("contain", "Graphic designer");
             cy.get(".summary").should("contain", "Use the Adobe package...");
         });
